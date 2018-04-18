@@ -1,0 +1,41 @@
+/*---------------------------------------------------------------------------*\
+  #TOOLS > #MIXINS > #RESPONSIVE
+\*---------------------------------------------------------------------------*/
+
+/**
+ * The below mixins are for generic content layout breakpoints. They
+ * should be used in addition to content-specific breakpoints to ensure content
+ * is legible on any screen size, small or large.
+ *
+ * Values have been based on rough averages between the most popular screen
+ * sizes used to access the Internet..
+ */
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

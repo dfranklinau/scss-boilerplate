@@ -1,0 +1,20 @@
+/*---------------------------------------------------------------------------*\
+  #BASE > #LINKS
+\*---------------------------------------------------------------------------*/
+
+a {
+  text-decoration: underline;
+  color: $color-link;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+}

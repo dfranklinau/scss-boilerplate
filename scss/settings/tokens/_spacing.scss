@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #SPACING
+\*---------------------------------------------------------------------------*/
+
+/**
+ * The base space variable is used as the default spacing and all other
+ * space values are based on this value. The ratio is used to calculate the
+ * incremental values.
+ *
+ * e.g. if `$space-base = 1.5em` and `$space-ratio = 1.5`...
+ * `$space-base * $space-ratio = 2.25rem`, or
+ * `$space-base * ($space-ratio^2) = 3.375rem`
+ */
+$space-base: rem($global-space);
+$space-ratio: 1.5;
+
+/**
+ * Space variables are defined using a shirt sizing system. It is simple to
+ * pick up and easy to remember. "Medium" is considered the base variable in
+ * all cases.
+ */
+$space-3xs: $space-base / ($space-ratio * $space-ratio * $space-ratio * $space-ratio);
+$space-2xs: $space-base / ($space-ratio * $space-ratio * $space-ratio);
+$space-xs:  $space-base / ($space-ratio * $space-ratio);
+$space-s:   $space-base / ($space-ratio);
+$space-m:   $space-base;
+$space-l:   $space-base * ($space-ratio);
+$space-xl:  $space-base * ($space-ratio * $space-ratio);
+$space-2xl: $space-base * ($space-ratio * $space-ratio * $space-ratio);
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #SPACING > #DEBUG
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Log each spacing variable to the console if debug mode is on.
+ */
+@if ( config("debug") ) {
+	@debug "2XS space size is: " + #{$space-2xs};
+	@debug "XS space size is: " + #{$space-xs};
+	@debug "S space size is: " + #{$space-s};
+	@debug "M space size is: " + #{$space-m};
+	@debug "L space size is: " + #{$space-l};
+	@debug "XL space size is: " + #{$space-xl};
+	@debug "2XL space size is: " + #{$space-2xl};
+}

@@ -1,0 +1,12 @@
+{
+  "name": "scss-boilerplate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A boilerplate (written in SCSS) to serve as a scalable and maintainable CSS foundation.",
+  "author": "Daniel Franklin <git@danielfranklin.id.au>",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "9.2.0",
+    "stylelint-order": "0.8.1"
+  }
+}

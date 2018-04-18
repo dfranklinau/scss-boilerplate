@@ -1,0 +1,39 @@
+/*---------------------------------------------------------------------------*\
+  #GENERIC > #RESET
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Set the global 'box-sizing' state to 'inherit'.
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/**
+ * Choose to inherit fonts for relevant elements.
+ */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+/**
+ * Collapse table borders.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

@@ -1,0 +1,99 @@
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLORS
+\*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #NEUTRALS
+\*---------------------------------------------------------------------------*/
+
+$color-white:   #FFFFFF;
+$color-black:   #000000;
+
+$color-gray-05: #F8F5F3; // Brightness: 95~97%
+$color-gray-15: #D8D8D8; // Brightness: 85%
+$color-gray-35: #A5A5A5; // Brightness: 65%
+$color-gray-65: #595959; // Brightness: 35%
+$color-gray-80: #333333; // Brightness: 20%
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #CORAL (PRIMARY)
+\*---------------------------------------------------------------------------*/
+
+$color-coral-100: #FAE8E2;
+$color-coral-200: #F8CCC4;
+$color-coral-300: #F6B0A6;
+$color-coral-400: #F49488;
+$color-coral-500: #F2786A;
+$color-coral-600: #C26054;
+$color-coral-700: #92483E;
+$color-coral-800: #623028;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #DANUBE (ACCENT)
+\*---------------------------------------------------------------------------*/
+
+$color-danube-100: #DDE8EF;
+$color-danube-200: #BFD2E3;
+$color-danube-300: #A1BCD7;
+$color-danube-400: #83A6CB;
+$color-danube-500: #6590BF;
+$color-danube-600: #517499;
+$color-danube-700: #3D5873;
+$color-danube-800: #293C4D;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #CHARDONNAY (TERTIARY)
+\*---------------------------------------------------------------------------*/
+
+$color-chardonnay-300: #FFE1B4;
+$color-chardonnay-400: #FFD79A;
+$color-chardonnay-500: #FFCD80;
+$color-chardonnay-600: #CBA366;
+$color-chardonnay-700: #97794C;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #FEEDBACK
+\*---------------------------------------------------------------------------*/
+
+$color-feedback-positive: #60A663;
+$color-feedback-warning:  $color-chardonnay-500;
+$color-feedback-negative: #B54747;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #LINK
+\*---------------------------------------------------------------------------*/
+
+$color-link:         $color-danube-600;
+$color-link-visited: #7B569E;
+$color-link-hover:   $color-danube-800;
+$color-link-active:  $color-coral-500;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #COLOR > #TYPOGRAPHY
+\*---------------------------------------------------------------------------*/
+
+$color-typopgraphy-body: $color-gray-80;

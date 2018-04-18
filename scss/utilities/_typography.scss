@@ -1,0 +1,107 @@
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #TYPOGRAPHY
+\*---------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #TYPOGRAPHY > #ALIGNMENT
+\*---------------------------------------------------------------------------*/
+
+.u-text--left {
+  text-align: left !important;
+}
+
+.u-text--right {
+  text-align: right !important;
+}
+
+.u-text--center {
+  text-align: center !important;
+}
+
+.u-text--justify {
+  text-align: justify !important;
+}
+
+.u-text--nowrap {
+  white-space: nowrap !important;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #TYPOGRAPHY > #TRANSFORM
+\*---------------------------------------------------------------------------*/
+
+.u-text--lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-text--uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-text--capitalize {
+  text-transform: capitalize !important;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #TYPOGRAPHY > #LINKS
+\*---------------------------------------------------------------------------*/
+
+.u-link--title {
+  &,
+  &:visited {
+    text-decoration: none;
+    color: $color-danube-500;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $color-danube-400;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: $color-coral-600;
+  }
+}
+
+.u-link--inverted {
+  &,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $color-white;
+  }
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #TYPOGRAPHY > #LISTS
+\*---------------------------------------------------------------------------*/
+
+.u-list--inline {
+  padding: 0;
+  list-style-type: none;
+}
+
+  .u-list--inline > li {
+    display: inline-block;
+  }
+
+  .u-list--inline > li + li {
+    margin-left: $space-3xs;
+  }

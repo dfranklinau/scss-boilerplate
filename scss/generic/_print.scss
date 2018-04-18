@@ -1,0 +1,112 @@
+/*---------------------------------------------------------------------------*\
+  #GENERIC > #PRINT
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Credit to:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L198
+ */
+@media print {
+
+  /**
+   * Apply global styles that make text more legible on paper.
+   */
+  *,
+  *::before,
+  *::after,
+  *::first-letter,
+  *::first-line {
+    background: transparent !important;
+
+    color: #000000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+
+  /**
+   * Style hyperlinks on printed pages to include the `href` and `title`
+   * attributes.
+   */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+
+  /**
+   * Don't show links that are fragment identifiers, or use the
+   * `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+
+  /**
+   * Style quotes and preformatted text to prevent page breaking.
+   */
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+
+    page-break-inside: avoid;
+  }
+
+
+  /**
+   * Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+
+  /**
+   * Force iamges to be respsonsive on pages so that they don’t overhang.
+   */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+
+  /**
+   * Set text formatting rules for printing.
+   */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+/**
+ * Hide the specified content when printing the page.
+ */
+.no-print {
+  @media print {
+    display: none;
+  }
+}

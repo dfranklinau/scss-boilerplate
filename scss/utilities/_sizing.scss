@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #SIZING
+\*---------------------------------------------------------------------------*/
+
+@include generate-sizing();
+
+@include for-phone-only {
+  @include generate-sizing("phone");
+}
+
+@include for-tablet-portrait-up {
+  @include generate-sizing("tablet-portrait");
+}
+
+@include for-tablet-landscape-up {
+  @include generate-sizing("tablet-landscape");
+}
+
+@include for-desktop-up {
+  @include generate-sizing("desktop");
+}
+
+@include for-big-desktop-up {
+  @include generate-sizing("big-desktop");
+}

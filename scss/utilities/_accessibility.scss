@@ -1,0 +1,11 @@
+/*---------------------------------------------------------------------------*\
+  #UTILITIES > #ACCESSIBILITY
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Define a class that will make the contents accessible only to assistive
+ * technologies. (primarily screen readers.)
+ */
+.u-assistive-text {
+  @include assistive-text();
+}

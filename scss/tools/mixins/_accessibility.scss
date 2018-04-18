@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------*\
+  #TOOLS > #MIXINS > #ACCESSIBILITY
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Hide content, but still make it available to screen readers and other
+ * assistive technologies.
+ */
+@mixin assistive-text {
+  position: absolute !important;
+  z-index: $z-underground !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip-path: rect(0 0 0 0) !important;
+}

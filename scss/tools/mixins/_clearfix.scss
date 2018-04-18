@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------------------*\
+  #TOOLS > #MIXINS > #CLEARS
+\*---------------------------------------------------------------------------*/
+
+/**
+ * The most current “clearfix”. Overrides Bootstrap's `clearfix` mixin.
+ */
+@mixin clearfix {
+  &::after {
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
+  }
+}
+
+/**
+ * Removes the bottom margin on the last child of an element.
+ */
+@mixin clearlast {
+  > :last-child {
+    margin-bottom: 0 !important;
+  }
+}

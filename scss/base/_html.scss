@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------------------*\
+  #BASE > #HTML
+\*---------------------------------------------------------------------------*/
+
+/**
+ * 1. Set a minimum width so that small devices will not get a strange,
+ *    distorted page and rather a page with slight horizontal overhang.
+ *
+ * 2. Ensure the page always fills at least the entire height of the
+ *    viewport.
+ *
+ * 3. Force scrollbars to always be visible to prevent awkward 'jumps' when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ *
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ */
+html {
+  background-color: $color-gray-05;
+  min-width: 320px; /* [1] */
+  min-height: 100%; /* [2] */
+  font-family: $font-family-body;
+  font-size: 100%;
+  line-height: $global-line-height;
+  overflow-y: scroll; /* [3] */
+  -ms-text-size-adjust: 100%; /* [4] */
+  -webkit-text-size-adjust: 100%; /* [4] */
+
+  @include for-tablet-landscape-up {
+    font-size: 110%;
+  }
+
+  @include for-desktop-up {
+    font-size: 120%;
+  }
+
+  @include for-big-desktop-up {
+    font-size: 120%;
+  }
+}

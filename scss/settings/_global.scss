@@ -1,0 +1,21 @@
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #GLOBAL
+\*---------------------------------------------------------------------------*/
+
+$global-font-size: 16px;
+$global-line-height: 1.5;
+$global-space: $global-font-size * $global-line-height;
+
+/**
+ * Convert any `px` value to `em`.
+ */
+@function em($px) {
+  @return ($px / 16px) * 1em;
+}
+
+/**
+ * Convert any `px` value to `rem`.
+ */
+@function rem($px) {
+  @return ($px / 16px) * 1rem;
+}

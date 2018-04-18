@@ -1,0 +1,87 @@
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #TYPOGRAPHY
+\*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #TYPOGRAPHY > #FONT-FAMILY
+\*---------------------------------------------------------------------------*/
+
+$font-family-body: "Lato", sans-serif;
+$font-family-heading: "Lato", sans-serif;
+$font-family-monospace: "Courier New", monospace;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #TYPOGRAPHY > #FONT-SIZE
+\*---------------------------------------------------------------------------*/
+
+/**
+ * The base font size variable is used as the default font size and all other
+ * font sizes are based on this value. The ratio is used to calculate the
+ * incremental values.
+ *
+ * e.g. if `$font-size-base = 1em` and `$font-size-ratio = 1.5`...
+ * `$font-size-base * $font-size-ratio = 1.5em`, or
+ * `$font-size-base * ($font-size-ratio^2) = 2.25em`
+ */
+$font-size-base: rem($global-font-size);
+$font-size-ratio: 1.35;
+
+/**
+ * Font size variables are defined using a shirt sizing system. It is simple to
+ * pick up and easy to remember. "Medium" is considered the base variable in
+ * all cases.
+ */
+$font-size-2xs: $font-size-base / ($font-size-ratio * $font-size-ratio * $font-size-ratio);
+$font-size-xs:  $font-size-base / ($font-size-ratio * $font-size-ratio);
+$font-size-s:   $font-size-base / ($font-size-ratio);
+$font-size-m:   $font-size-base;
+$font-size-l:   $font-size-base * ($font-size-ratio);
+$font-size-xl:  $font-size-base * ($font-size-ratio * $font-size-ratio);
+$font-size-2xl: $font-size-base * ($font-size-ratio * $font-size-ratio * $font-size-ratio);
+$font-size-3xl: $font-size-base * ($font-size-ratio * $font-size-ratio * $font-size-ratio * $font-size-ratio);
+
+/**
+ * Shortcuts for font sizes with meaningful names are defined here.
+ */
+$font-size-h1: $font-size-2xl;
+$font-size-h2: $font-size-xl;
+$font-size-h3: $font-size-l;
+$font-size-h4: $font-size-m;
+$font-size-h5: $font-size-m;
+$font-size-h6: $font-size-m;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #TYPOGRAPHY > #FONT-WEIGHT
+\*---------------------------------------------------------------------------*/
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #TOKENS > #TYPOGRAPHY > #DEBUG
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Log each font size to the console if debug mode is on.
+ */
+@if ( config("debug") ) {
+  @debug "2XS font size is: " + #{$font-size-2xs};
+  @debug "XS font size is: " + #{$font-size-xs};
+  @debug "S font size is: " + #{$font-size-s};
+  @debug "M font size is: " + #{$font-size-m};
+  @debug "L font size is: " + #{$font-size-l};
+  @debug "XL font size is: " + #{$font-size-xl};
+  @debug "2XL font size is: " + #{$font-size-2xl};
+}

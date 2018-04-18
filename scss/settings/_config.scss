@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------------------*\
+  #SETTINGS > #CONFIG
+\*---------------------------------------------------------------------------*/
+
+/**
+ * Project-level configuration such as debugging is defined here.
+ */
+$config: (
+  debug: false,
+);
+
+/**
+ * Return any key from the config map using this helper function.
+ */
+@function config($key) {
+  @return map-get($config, $key);
+}
