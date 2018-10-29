@@ -106,11 +106,7 @@
   #OBJECTS
 \*---------------------------------------------------------------------------*/
 
-@import "objects/container";
-@import "objects/footer";
-@import "objects/header";
-@import "objects/main";
-@import "objects/post";
+@import "objects/object";
 
 
 
@@ -120,12 +116,7 @@
   #COMPONENTS
 \*---------------------------------------------------------------------------*/
 
-@import "components/article";
-@import "components/button";
-@import "components/figure";
-@import "components/hero";
-@import "components/highlight";
-@import "components/tag";
+@import "components/component";
 
 
 
