@@ -321,7 +321,6 @@
 
     "property-case": "lower",
     "property-no-unknown": true,
-    "property-no-vendor-prefix": false,
 
     "rule-empty-line-before": ["always", {
       "except": ["first-nested"],
