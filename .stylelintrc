@@ -3,7 +3,6 @@
     "stylelint-order"
   ],
   "rules": {
-
     "at-rule-empty-line-before": ["always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"],
@@ -364,6 +363,5 @@
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
     "value-no-vendor-prefix": true
-
   }
 }
