@@ -5,7 +5,7 @@
   "author": "Daniel Franklin <git@danielfranklin.id.au>",
   "license": "ISC",
   "dependencies": {
-    "stylelint": "9.7.0",
-    "stylelint-order": "1.0.0"
+    "stylelint": "10.1.0",
+    "stylelint-order": "3.0.0"
   }
 }
