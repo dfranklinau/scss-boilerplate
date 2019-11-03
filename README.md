@@ -1,4 +1,4 @@
-# SCSS Boilerplate
+# SCSS boilerplate
 
 A boilerplate (written in SCSS) to serve as a scalable and maintainable CSS
 foundation. It uses stylelint and `stylelint-order` to maintain consistency.
