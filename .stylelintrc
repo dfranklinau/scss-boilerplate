@@ -117,13 +117,13 @@
         },
         "declarations",
         {
-          type: "at-rule",
-          name: "media"
+          "type": "at-rule",
+          "name": "media"
         },
         "rules"
       ],
       {
-        unspecified: "ignore"
+        "unspecified": "ignore"
       }
     ],
     "order/properties-order": [
