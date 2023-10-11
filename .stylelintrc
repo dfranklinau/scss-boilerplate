@@ -168,7 +168,11 @@
         {
           "order": "strict",
           "properties": [
-            "outline"
+            "outline",
+            "outline-color",
+            "outline-offset",
+            "outline-style",
+            "outline-width"
           ]
         },
         {
@@ -258,7 +262,9 @@
         {
           "order": "strict",
           "properties": [
-            "overflow"
+            "overflow",
+            "overflow-x",
+            "overflow-y"
           ]
         },
         {
