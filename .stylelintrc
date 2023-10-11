@@ -303,6 +303,7 @@
           "order": "strict",
           "properties": [
             "font",
+            "font-display",
             "font-family",
             "font-size",
             "font-weight"
