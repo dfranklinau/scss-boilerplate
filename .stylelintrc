@@ -111,6 +111,10 @@
 
     "order/order": [
       [
+        {
+          "type": "at-rule",
+          "name": "include"
+        },
         "declarations",
         {
           type: "at-rule",
